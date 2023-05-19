@@ -1,0 +1,2 @@
+class Husui < ApplicationRecord
+end
