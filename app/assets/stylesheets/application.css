@@ -13,3 +13,165 @@
  *= require_tree .
  *= require_self
  */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+  }
+  
+  span {
+    color: #66FF99;
+  }
+  
+  header,nav,h2,.main-visual,footer {
+    font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+  }
+  
+  /* common */
+  
+  /* header */
+  header {
+    width: 100%; /* 横幅 */
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    background-color: white;
+  }
+  
+  header .heading {
+    /* headerタグ内のheadingクラスにのみ反映される */
+    font-size: 32px;
+    padding-left: 30px;
+  }
+  
+  .nav-list {
+    text-align: right;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  
+  .nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  }
+  /* header */
+  
+  /*main-visual*/
+  .main-visual {
+    width: 100%; /* 横幅いっぱい */
+    height: 400px; /* 高さ300px */
+    background-image: url(img/mv.jpg);
+    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+    background-position: center; /* 背景画像を中央に配置 */
+  }
+  
+  .main-visual-content {
+    width: 40%; /* 横幅40% */
+    height: 400px; /* 親の高さに揃える */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色を半透明の黒にする */
+    text-align: center; /* 文字を中央揃えにする */
+    padding-top: 105px; /* 上側の内側余白で垂直方向の位置を調整 */
+  }
+  
+  .main-visual-text {
+    color: #fff; /* 文字色を白に変更 */
+    padding-top: 30px;
+  }
+  
+  main {
+    width: 1100px; /* 横幅800px */
+    display: flex; /* Flexboxの利用 */
+    justify-content: center; /* 要素の横並び・中央寄せ */
+    margin: 0 auto; /* 要素の中央揃え */
+    padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+  }
+  /*main common*/
+  
+  /*blogs*/
+  .blog {
+    width: auto;
+    margin-right: 30px; /* 領域の右側余白 */
+  }
+  
+  .blog-heading {
+    border-bottom: 8px solid #f7f7f7;
+    text-align: center;
+    line-height: 0.6;
+    padding-bottom: 17px;
+  }
+  
+  .blog-box {
+    padding-top: 50px;
+    display: flex;
+    background: url(img/黄緑1.jpg);
+  }
+  
+  .blog-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    margin:  15px;
+  }
+  
+  .blog-image {
+    height: 280px;
+  }
+  
+  .blog-text {
+    justify-content: flex-start;
+  }
+  
+  .blog-text-heading {
+    padding-bottom: 15px;
+  }
+  
+  .text-title {
+    padding-bottom: 15px;
+  }
+  
+  /*sidebar*/
+  .sidebar {
+    width: 230px;
+  }
+  .common-heading {
+    border-bottom: 8px solid #f7f7f7;
+    text-align: center;
+    line-height: 0.6;
+  }
+  .sidebar-contents {
+    padding: 50px 0;
+  }
+  .popular-text,
+  .categories-text {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 5px;
+  }
+  .popular-text:last-child,
+  .categories-text:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  /*footer*/
+  footer {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background-color: #848282;
+  }
+  .footer-text {
+    color: #fff;
+    text-align: right;
+    padding-right: 30px;
+  }
+  /*footer*/
+  
+  /*---show.html.erb---*/
+  
+  /*---show.html.erb---*/

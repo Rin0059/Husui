@@ -1,7 +1,4 @@
 class HusuisController < ApplicationController
-  def top
-  end
-
   def index
   end
 
@@ -9,8 +6,5 @@ class HusuisController < ApplicationController
   end
 
   def help
-  end
-
-  def about
   end
 end
