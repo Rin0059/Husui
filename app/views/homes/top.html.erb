@@ -96,6 +96,9 @@
             <p class="text">
               弊社へご連絡はこちらのページからどうぞ。お問い合わせは「LINE」をご用意しています。<br />
               24時間受け付けておりますので、早朝や深夜などいつでもご連絡ください。<br />
+              <br />
+              <br />
+              <br />
             </p>
           </h3>
           <%= link_to '詳しくはこちら', husuis_help_path, class: "btn btn-success" %>
@@ -108,5 +111,23 @@
 
 <!-- footer -->
 <footer>
-  <p class="footer-text">Copyright © 株式会社 ターン・ライト. All rights reserved.</p>
+  <div class="footer-about-sec">
+    <div class="footer_line">
+			<h4>株式会社 ターン・ライト</h4>
+			<p>LINEでのお問い合わせはこちらから</p>
+			<%= image_tag('img/line友だち追加ボタン.png') %>
+			<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
+    </div>
+  </div>
+  
+  <div class="right">
+		<div class="flex-inner">
+		<ul class="footer-menu-list">
+			<li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+		</ul>
+	  </div>
+  </div>
 </footer>
