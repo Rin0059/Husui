@@ -1,16 +1,14 @@
 <!-- header -->
 <header>
   <h1 class="heading">
-    <a>
-      株式会社 <span>ターン・ライト</span>
-    </a>
+    株式会社 <span>ターン・ライト</span>
   </h1>
   <nav>
     <ul class="nav-list">
-      <li class="nav-list-item">ご挨拶</li>
-      <li class="nav-list-item">料金案内</li>
-      <li class="nav-list-item">ご相談の流れ</li>
-      <li class="nav-list-item">お問い合わせ</li>
+      <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
     </ul>
   </nav>
 </header>

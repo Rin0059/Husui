@@ -1,16 +1,14 @@
 <!-- header -->
 <header>
   <h1 class="heading">
-    <a href='root_path'>
-      株式会社 <span>ターン・ライト</span>
-    </a>
+    株式会社 <span>ターン・ライト</span>
   </h1>
   <nav>
     <ul class="nav-list">
-      <li class="nav-list-item">ご挨拶</li>
-      <li class="nav-list-item">料金案内</li>
-      <li class="nav-list-item">ご相談の流れ</li>
-      <li class="nav-list-item">お問い合わせ</li>
+      <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
     </ul>
   </nav>
 </header>
@@ -32,24 +30,48 @@
   </div>
 </div>
 
+
 <!-- main -->
 <main>
+  <div class="main-blog">
+    <%= image_tag('img/メイン1.jpg', class: 'blog-main') %>
+    <div class="right">
+      <h3 class="blog-heading">北海道札幌市の風水鑑定</h3>
+      <p class="main-text">
+        株式会社 ターン・ライトのホームページをご覧いただき、ありがとうございます。<br />
+        弊社は北海道札幌市にある、風水鑑定をご提供している会社です。<br />
+        エリアは札幌市だけでなく、全国どこでもご対応しております。<br />
+        <br />
+        人間関係、恋愛、育児、家庭問題、夫婦仲など、なんでもご相談ください。<br />
+        しっかりとヒアリングをし、ご相談内容に沿った風水上のアドバイスを致します。<br />
+        またご自宅やオフィスなどの「間取り図鑑定」もご提供しております。<br />
+        <br />
+        まずは、北海道札幌市の弊社までお気軽にお問い合わせください<br />
+        <br />
+        <br />
+        <%= image_tag('img/line友だち追加ボタン.png') %><br />
+        <br />
+      </p>
+    </div>
+  </div>
+</main>
+
+<div class="content">
   <section class="blog">
-    <h2 class="blog-heading"></h2>
     <div class="blog-box">
       <div class="blog-item">
         <%= image_tag('img/forest.jpg', class: 'blog-image') %>
         <section class="blog-text">
           <h3 class="blog-text-heading">
             <h1 class="text-title">風水鑑定</h1>
-            <a class="text">
+            <p class="text">
               お客様のお悩みに対し、風水鑑定で最適なアドバイスをご提供しております。<br />
               ご提供する風水鑑定は「宿命鑑定」「間取り図鑑定」の2つをご用意しています。<br />
               それぞれのニーズに合わせたサービスでお客様のお悩み解決に繋げております。<br />
               詳しくはこちらのページをご覧ください。<br />
-            </a>
+            </p>
           </h3>
-          <%= link_to '詳しくはこちら', husuis_index_path %>
+          <%= link_to '詳しくはこちら', husuis_index_path, class: "btn btn-success" %>
         </section>
       </div>
       <div class="blog-item">
@@ -57,13 +79,13 @@
         <section class="blog-text">
           <h3 class="blog-text-heading">
             <h1 class="text-title">よくある質問</h1>
-            <a class="text">
+            <p class="text">
               弊社への疑問や質問などがある方は、お問い合わせ前に一度こちらのページをご確認ください。<br />
               こちらのページでは、弊社へのこれまでのお問い合わせ内容から特に多かったご質問をピックアップしてご紹介しております。<br />
               こちらのページで解決しない場合、お気軽にお問い合わせください。<br />
-            </a>
+            </p>
           </h3>
-          <%= link_to '詳しくはこちら', husuis_show_path %>
+          <%= link_to '詳しくはこちら', husuis_show_path, class: "btn btn-success" %>
         </section>
       </div>
       <div class="blog-item">
@@ -71,17 +93,18 @@
         <section class="blog-text">
           <h3 class="blog-text-heading">
             <h1 class="text-title">お問い合わせ</h1>
-            <a class="text">
+            <p class="text">
               弊社へご連絡はこちらのページからどうぞ。お問い合わせは「LINE」をご用意しています。<br />
               24時間受け付けておりますので、早朝や深夜などいつでもご連絡ください。<br />
-            </a>
+            </p>
           </h3>
-          <%= link_to '詳しくはこちら', husuis_help_path %>
+          <%= link_to '詳しくはこちら', husuis_help_path, class: "btn btn-success" %>
         </section>
       </div>
     </div>
   </section>
-</main>
+</div>
+
 
 <!-- footer -->
 <footer>
