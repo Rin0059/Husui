@@ -26,6 +26,10 @@
     color: #66FF99;
   }
   
+  span1 {
+    color: #00CC66;
+  }
+  
   header,nav,h2,.main-visual,footer {
     font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
   }
@@ -201,18 +205,33 @@
   
   /*footer*/
   
-  /*---show.html.erb---*/
+  /*---index.html.erb---*/
+  .index {
+    display: flex; /*横並び*/
+    flex-wrap: wrap; /* 折り返し指定 */
+    justify-content: center; /* 要素の横並び・中央寄せ */
+    padding: 100px 0;
+  }
   
-  /*---show.html.erb---*/
+  
+  .price-image {
+    width: 20%;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  /*---index.html.erb---*/
 
 
 
 
  /*---about.html.erb---*/
-.about-image {
+.image {
     width: 100%; /* 横幅いっぱい */
     height: 400px; /* 高さ400px */
-    background-image: url(img/italy.jpg);
+    background-image: url(img/midori.jpg);
     background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
     background-position: center; /* 背景画像を中央に配置 */
   }
