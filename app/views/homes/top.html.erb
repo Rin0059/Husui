@@ -112,22 +112,19 @@
 <!-- footer -->
 <footer>
   <div class="footer-about-sec">
-    <div class="footer_line">
-			<h4>株式会社 ターン・ライト</h4>
-			<p>LINEでのお問い合わせはこちらから</p>
-			<%= image_tag('img/line友だち追加ボタン.png') %>
-			<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
-    </div>
+    <h4>株式会社 ターン・ライト</h4>
+		<p>LINEでのお問い合わせはこちらから</p>
+		<%= image_tag('img/line友だち追加ボタン.png') %>
+		<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
   </div>
   
-  <div class="right">
-		<div class="flex-inner">
+  <div class="footer-text">
 		<ul class="footer-menu-list">
 			<li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
       <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
       <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
       <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
 		</ul>
-	  </div>
+		<p class= "footer-last">Copyright © 株式会社 ターン・ライト. All rights reserved.</p>
   </div>
 </footer>
