@@ -27,10 +27,13 @@
     <h5><span1>宿命鑑定とは？</span1></h5>
     <span>----------------------------------------------------------------------------------------------------------</span>
     <br />
-    <p>人は生まれながらに役割と素質があります。<br />
-    その役割と素質を生年月日から割り出しお伝えしています。<br />
-    宿命も素質も、それ自体に善し悪しはありません。<br />
-    与えられた宿命を生きていくことで魂は輝き、運気を味方につけることができるのです。<br /></p>
+    <p>
+      人は生まれながらに役割と素質があります。<br />
+      その役割と素質を生年月日から割り出しお伝えしています。<br />
+      宿命も素質も、それ自体に善し悪しはありません。<br />
+      与えられた宿命を生きていくことで魂は輝き、運気を味方につけることができるのです。<br />
+      <br />
+    </p>
   </div>
   
   <div class="price-image">
@@ -50,4 +53,96 @@
     </ul>
   </div>
   
+  
+  <div class="index-text">
+    <h4>間取り図鑑定</h4>
+    <span>_______</span>
+    <br />
+    <br />
+    <h3>料金1時間/12,000円</h3>
+    <br />
+    <h5><span1>間取り図鑑定とは？？</span1></h5>
+    <span>----------------------------------------------------------------------------------------------------------</span>
+    <br />
+    <p>
+      同じ場所に住んでいても、生まれた年によって吉凶が異なります。<br />
+      また、場所の吉凶は20年単位で変動するのです。<br />
+      弊社ではご自宅やオフィスの間取り図に八卦線を曳き、場所の陰陽や吉凶を鑑定しています。<br />
+      ご自宅やオフィスの間取りにお悩みでしたら、ぜひご相談ください。<br />
+      <br />
+      ※鑑定してもらいたい場所の間取り図をご用意ください。<br />
+      <br />
+    </p>
+  </div>
+  
+  <div class="price-image">
+    <%= image_tag 'img/midori.jpg', style: "border-radius: 30px; width: 400px; height: 400px; object-fit:cover;" %>
+  </div>
+  
+  <div class="index-box">
+    <h4><span1>このような人におすすめ</span1></h4>
+    <span>--------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+    <ul class="index-list">
+      <li>新居を建てる予定</li>
+      <li>家の間取りに悩んでいる</li>
+      <li>運気を上げたい</li>
+    </ul>
+  </div>
+  
+  
+  <div class="index-text">
+    <h4>中国本流風水基礎講座</h4>
+    <span>_______</span>
+    <br />
+    <br />
+    <h3>料金15時間/38,500円（テキスト代込み）</h3>
+    <br />
+    <h5><span1>中国本流風水基礎講座とは？</span1></h5>
+    <span>----------------------------------------------------------------------------------------------------------</span>
+    <br />
+    <p>
+      通称、『線引き勉強会』本格な中国風水の基礎を学べる講座です。<br />
+      独学では辿り着けない、貴重な情報を盛り込んだ“本物”の風水をわかりやすく丁寧にお教えします。<br />
+      <br />
+      5時間の3回コース、7.5時間の2回コースをご用意しております。<br />
+      <br />
+    </p>
+  </div>
+  
+  <div class="price-image">
+    <%= image_tag 'img/midori.jpg', style: "border-radius: 30px; width: 400px; height: 400px; object-fit:cover;" %>
+  </div>
+  
+  <div class="index-box">
+    <h4><span1>このような人におすすめ</span1></h4>
+    <span>--------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+    <ul class="index-list">
+      <li>本物の風水を世に広めたい</li>
+      <li>間取り図鑑定をできるようになりたい</li>
+      <li>変わったことをやってみたい</li>
+      <li>環境と運気の関係を知りたい</li>
+    </ul>
+  </div>
 </div>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="footer-about-sec">
+    <h4>株式会社 ターン・ライト</h4>
+		<p>LINEでのお問い合わせはこちらから</p>
+		<%= image_tag('img/line友だち追加ボタン.png') %>
+		<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
+  </div>
+  
+  <div class="footer-text">
+		<ul class="footer-menu-list">
+			<li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+		</ul>
+		<p class= "footer-last">Copyright © 株式会社 ターン・ライト. All rights reserved.</p>
+  </div>
+</footer>
