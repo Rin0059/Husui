@@ -76,7 +76,7 @@
   /*main-visual*/
   .main-visual {
     width: 100%; /* 横幅いっぱい */
-    height: 400px; /* 高さ300px */
+    height: 500px; /* 高さ500px */
     background-image: url(img/mv.jpg);
     background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
     background-position: center; /* 背景画像を中央に配置 */
@@ -84,7 +84,7 @@
   
   .main-visual-content {
     width: 40%; /* 横幅40% */
-    height: 400px; /* 親の高さに揃える */
+    height: 500px; /* 親の高さに揃える */
     background-color: rgba(0, 0, 0, 0.5); /* 背景色を半透明の黒にする */
     text-align: center; /* 文字を中央揃えにする */
     padding-top: 105px; /* 上側の内側余白で垂直方向の位置を調整 */
@@ -92,12 +92,12 @@
   
   .main-visual-text {
     color: #fff; /* 文字色を白に変更 */
-    padding-top: 30px;
+    padding-top: 60px;
   }
   
   
   main {
-    padding-top: 100px;
+    padding-top: 200px;
   }
   
   .main-blog {
@@ -137,9 +137,17 @@
     display: flex; /* Flexboxの利用 */
     justify-content: center; /* 要素の横並び・中央寄せ */
     margin: 0 auto; /* 要素の中央揃え */
-    padding: 100px 0; /* 上下に100px、左右に0pxの内側余白 */
+    padding: 200px 0; /* 上下に100px、左右に0pxの内側余白 */
   }
-  /*main common*/
+  
+  
+  .content1 {
+    width: 1100px; /* 横幅1100px */
+    display: flex; /* Flexboxの利用 */
+    justify-content: center; /* 要素の横並び・中央寄せ */
+    margin: 0 auto; /* 要素の中央揃え */
+  }
+  /*main
   
   /*blogs*/
   .blog {
@@ -202,8 +210,11 @@
     font-size: 12px;
   }
   
-  
   /*footer*/
+
+
+
+
   
   /*---index.html.erb---*/
   .index {
@@ -232,10 +243,52 @@
   /*---index.html.erb---*/
 
 
+  /*---show.html.erb---*/
+  
+  .flow {
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    position: relative;
+  }
+  
+  
+  .flow-box {
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    position: relative;
+    counter-increment: number 1;
 
+  }
+  
+  
+  .flow-box p {
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #262626;
+    position: relative;
+  }
+  
+  
+  .flow-box::before {
+    background: #39ea80;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    content: counter(number) " ";
+    position: absolute;
+    left: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+  }
+  
+  
+  /*---show.html.erb---*/
 
  /*---about.html.erb---*/
-.image {
+  .image {
     width: 100%; /* 横幅いっぱい */
     height: 400px; /* 高さ400px */
     background-image: url(img/midori.jpg);

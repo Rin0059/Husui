@@ -1,2 +1,110 @@
-<h1>Husuis#show</h1>
-<p>Find me in app/views/husuis/show.html.erb</p>
+<!-- header -->
+<header>
+  <h2 class="heading">
+    株式会社 <span>ターン・ライト</span>
+  </h2>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+    </ul>
+  </nav>
+</header>
+
+<div class= "image"></div>
+
+
+
+
+<main>
+  <div class="flow">
+    <div class="content1">
+      <section class="flow-inner">
+        <div class="flow-box">
+          <h2>お問い合わせ</h2>
+          <span>_____________</span>
+          <br />
+          <br />
+          <p>
+            家の間取りや自分自身のことなど、少しでも気になればお気軽にお問い合わせください。<br />
+            風水鑑定でお客様のお悩みに最適なアドバイスをご提供しています。<br />
+            お問い合わせは、<span1>LINE</span1> から受け付けております。<br />
+            <br />
+          </p>
+        </div>
+        
+        <div class="flow-box">
+          <h2>ヒアリング</h2>
+          <span>_____________</span>
+          <br />
+          <br />
+          <p>
+            お客様の現在の状況、住んでいる地域環境や抱えている悩みなど詳しくお伺いします。<br />
+            鑑定に必要な情報になりますので、可能な限り詳しくお伝えください。<br />
+            <br />
+          </p>
+        </div>
+        
+        
+        <div class="flow-box">
+          <h2>鑑定</h2>
+          <span>_____________</span>
+          <br />
+          <br />
+          <p>
+            ヒアリングの内容をもとに実際に鑑定を行います。<br />
+            お客様のご相談内容に応じた風水上のアドバイスをさせていただきます。<br />
+            <br />
+          </p>
+        </div>
+        
+        <div class="flow-box">
+          <h2>お支払い</h2>
+          <span>_____________</span>
+          <br />
+          <br />
+          <p>
+            鑑定が終わりましたら、お支払いをお願い致します。<br />
+            お支払いは現金のみにご対応しております。<br />
+            <br />
+          </p>
+        </div>
+        
+        <div class="flow-box">
+          <h2>アフターフォロー</h2>
+          <span>_____________</span>
+          <br />
+          <br />
+          <p>
+            最後にお客様に実践していただくためのアドバイスなどを行わせていただきます。<br />
+            <br />
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="footer-about-sec">
+    <h4>株式会社 ターン・ライト</h4>
+		<p>LINEでのお問い合わせはこちらから</p>
+		<%= image_tag('img/line友だち追加ボタン.png') %>
+		<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
+  </div>
+  
+  <div class="footer-text">
+		<ul class="footer-menu-list">
+			<li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+		</ul>
+		<p class= "footer-last">Copyright © 株式会社 ターン・ライト. All rights reserved.</p>
+  </div>
+</footer>
