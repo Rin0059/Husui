@@ -1,2 +1,119 @@
-<h1>Husuis#help</h1>
-<p>Find me in app/views/husuis/help.html.erb</p>
+<!-- header -->
+<header>
+  <h1 class="heading">
+    株式会社 <span>ターン・ライト</span>
+  </h1>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+    </ul>
+  </nav>
+</header>
+
+<div class= "image"></div>
+
+<main>
+  <div class="help">
+    <div class="content1">
+      <section class="help-full">
+        <div class="help-inner">
+          <h4>お問い合わせはこちらから</h4>
+          <br />
+          <%= image_tag('img/line友だち追加ボタン.png') %>
+        </div>
+        
+        <div class="main-inner">
+          <h3>よくある質問</h3>
+          <span>_____________</span>
+          <br />
+          <br />
+          <div class="help-text">
+            <h5>Question 1</h5>
+            <h4>どの地域まで対応していますか？</h4>
+            <p>
+              全国に対応しています。<br />
+              別途、交通費を頂いております。
+            </p>
+          </div>
+          
+          
+          <div class="help-text">
+            <h5>Question 2</h5>
+            <h4>予約は必要ですか？</h4>
+            <p>
+              はい、完全予約制です。<br />
+            </p>
+          </div>
+          
+          
+          <div class="help-text">
+            <h5>Question 3</h5>
+            <h4>どこから申し込んだらいいですか？</h4>
+            <p>
+              <span1>LINE</span1> から受け付けております。<br />
+              <span1>LINE</span1> は24時間受け付けております。<br />
+            </p>
+          </div>
+          
+          
+          <div class="help-text">
+            <h5>Question 4</h5>
+            <h4>支払い方法とタイミングを教えてください。</h4>
+            <p>
+              お支払いは現金のみご対応しております。<br />
+              鑑定終了後に手渡しでお支払いください。<br />
+            </p>
+          </div>
+          
+          
+          <div class="help-text">
+            <h5>Question 5</h5>
+            <h4>鑑定はどこで行ってくれますか？</h4>
+            <p>
+              ご自宅や近隣のカフェなど、ゆったりとお過ごしできる場所ならどこでも大丈夫です。<br />
+              鑑定場所の指定はご予約時にお伝えください。<br />
+            </p>
+          </div>
+          
+          
+          <div class="help-text">
+            <h5>Question 6</h5>
+            <h4>鑑定は1人だけしかできませんか？</h4>
+            <p>
+              複数人の鑑定も承っています。<br />
+              その際はご予約時にお伝えください。<br />
+            </p>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+<footer>
+  <div class="footer-about-sec">
+    <h4>株式会社 ターン・ライト</h4>
+		<p>LINEでのお問い合わせはこちらから</p>
+		<%= image_tag('img/line友だち追加ボタン.png') %>
+		<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
+  </div>
+  
+  <div class="footer-text">
+		<ul class="footer-menu-list">
+			<li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+		</ul>
+		<p class= "footer-last">Copyright © 株式会社 ターン・ライト. All rights reserved.</p>
+  </div>
+</footer>
+
