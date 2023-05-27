@@ -119,23 +119,61 @@
   @media screen and (max-width: 600px) {
     
     p {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       color: blue;
     }
+    
+    h3 {
+      padding-top: 2rem;
+      color: red;
+    }
+    
     
     img {
       max-width: 100%;
     }
     
     div {
-      text-align: center;
-      display: flex;
+      display: block;
       flex-wrap: wrap;
+    }
+    
+    footer {
+      display: flex; /*横並び*/
+      align-items: center;
+    }
+    
+    .footer-about-sec {
+      width: 60%;
+    }
+    
+    .footer-about-sec h4 {
+      font-size: 1rem;
+      padding-bottom: 2rem;
+    }
+    
+    .footer-text {
+      display: inline-block;
+      padding-top: 3rem;
+    }
+    
+    .link {
+      display: inline-block;
+      padding: 0.5rem 0;
+    }
+    
+    
+    .footer-last {
+      font-size: 9px;
     }
         
     
     .main-visual {
       width: 100%;
+    }
+    .main-visual-text {
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
     
     .nav-list {
@@ -147,10 +185,6 @@
       margin: 0 0 10px 0;
     }
     
-    .link {
-      color: red;
-    }
-  
     .main-visual-content {
       width: 100%;
     }
@@ -162,7 +196,6 @@
   
     .blog {
       width: 100%;
-      margin: 0;
     }
     
     .blog-main {
@@ -170,21 +203,31 @@
     }
   
     .blog-box {
-      padding-left: 2%;
-      padding-right: 2%;
+      width: 100%;
+      background: url(img/黄緑1.jpg);
     }
     
+    
     .blog-item {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem 0; 
     }
-  
+    
+    
+    .text {
+    }
+    
+    .blog-text {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    
     .blog-image {
       max-width: 100%;
     	height: 110px;
-    }
-  
-    .blog-text {
-      width: 49%;
-      padding-top: 5px;
     }
   
     .sidebar {
@@ -193,18 +236,6 @@
       padding-right: 3%;
     }
   
-    .instagram-box {
-      width: 48%;
-      padding-top: 48%;
-    }
-  
-    .instagram-box:nth-child(odd) {
-      margin-right: 4%;
-    }
-  
-    .pagination {
-      margin-bottom: 50px;
-    }
   }
 
 

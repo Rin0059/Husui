@@ -62,45 +62,48 @@
       <div class="blog-item">
         <%= image_tag('img/forest.jpg', class: 'blog-image') %>
         <section class="blog-text">
-          <h3 class="blog-text-heading">
-            <h1 class="text-title">風水鑑定</h1>
+          <div class="blog-text-heading">
+            <h3 class="text-title">風水鑑定</h3>
             <p class="text">
               お客様のお悩みに対し、風水鑑定で最適なアドバイスをご提供しております。<br />
               ご提供する風水鑑定は「宿命鑑定」「間取り図鑑定」の2つをご用意しています。<br />
               それぞれのニーズに合わせたサービスでお客様のお悩み解決に繋げております。<br />
               詳しくはこちらのページをご覧ください。<br />
             </p>
-          </h3>
+          </div>
           <%= link_to '詳しくはこちら', husuis_index_path, class: "btn btn-success" %>
         </section>
       </div>
       <div class="blog-item">
         <%= image_tag('img/desert.jpg', class: 'blog-image') %>
         <section class="blog-text">
-          <h3 class="blog-text-heading">
-            <h1 class="text-title">よくある質問</h1>
+          <div class="blog-text-heading">
+            <h3 class="text-title">よくある質問</h3>
             <p class="text">
-              弊社への疑問や質問などがある方は、お問い合わせ前に一度こちらのページをご確認ください。<br />
-              こちらのページでは、弊社へのこれまでのお問い合わせ内容から特に多かったご質問をピックアップしてご紹介しております。<br />
+              弊社への疑問や質問などがある方は<br />
+              お問い合わせ前に一度こちらのページをご確認ください。<br />
+              こちらのページでは、弊社へのこれまでのお問い合わせ内容から<br />
+              特に多かったご質問をピックアップしてご紹介しております。<br />
               こちらのページで解決しない場合、お気軽にお問い合わせください。<br />
             </p>
-          </h3>
+          </div>
           <%= link_to '詳しくはこちら', husuis_show_path, class: "btn btn-success" %>
         </section>
       </div>
       <div class="blog-item">
         <%= image_tag('img/sunset.jpg', class: 'blog-image') %>
         <section class="blog-text">
-          <h3 class="blog-text-heading">
-            <h1 class="text-title">お問い合わせ</h1>
+          <div class="blog-text-heading">
+            <h3 class="text-title">お問い合わせ</h3>
             <p class="text">
-              弊社へご連絡はこちらのページからどうぞ。お問い合わせは「LINE」をご用意しています。<br />
+              弊社へご連絡はこちらのページからどうぞ。<br />
+              お問い合わせは「LINE」をご用意しています。<br />
               24時間受け付けておりますので、早朝や深夜などいつでもご連絡ください。<br />
               <br />
               <br />
               <br />
             </p>
-          </h3>
+          </div>
           <%= link_to '詳しくはこちら', husuis_help_path, class: "btn btn-success" %>
         </section>
       </div>
@@ -113,7 +116,7 @@
 <footer>
   <div class="footer-about-sec">
     <h4>株式会社 ターン・ライト</h4>
-		<p>LINEでのお問い合わせはこちらから</p>
+		<p>LINEでのお問い合わせ</p>
 		<%= image_tag('img/line友だち追加ボタン.png') %>
 		<!--- <a href="https://yoya-kuru.com/priority_select.php?s=86&ifa=" target="_blank" class="yoyakuru-but"><img src="https://fukushige-fusuigaku.com/wp-content/themes/story_tcd041/img/yoyakuru-banner.jpg" class="yoyaku_bunner" alt="ヨヤクル" /></a> --->
   </div>
@@ -125,6 +128,9 @@
       <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
       <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
 		</ul>
-		<p class= "footer-last">Copyright © 株式会社 ターン・ライト. All rights reserved.</p>
+		<p class= "footer-last">
+		  Copyright © 株式会社 ターン・ライト.<br />
+		  All rights reserved.
+		</p>
   </div>
 </footer>
