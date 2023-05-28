@@ -14,6 +14,10 @@
  *= require_self
  */
  @import "bootstrap";
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
+ 
+ 
  
  * {
   margin: 0;
@@ -171,16 +175,78 @@
       font-size: 9px;
     }
     
-     /* header */
+     /* footer */
     
-    .nav-list {
-      width: 100%;
+    
+     /* header */
+     
+     
+    #nav {
+      width: 45%;
+      right: -40%;
+      top: 0;
+      transition: 0.7s;
     }
+    #nav ul {
+      list-style: none;
+    }
+    #nav ul li {
+      border-bottom: 1px solid black;
+    }
+    #nav ul li a {
+      color: #000;
+    }
+    #hamburger {
+      position: absolute;
+      top: 30px;
+      right: -5px;
+      width: 45px;
+      height: 16px;
+      transition: 0.7s;
+      cursor: pointer;
+    }
+    .inner_line {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 1px;
+      background-color: #000;
+      transition: 0.5s;
+      border-radius: 4px;
+    }
+    #line1 {
+      top: 0;
+    }
+    #line2 {
+      top: 8px;
+    }
+    #line3 {
+      bottom: 0;
+    }
+    .line_1, .line_2, .line_3 {
+      background-color: #000;
+    }
+    .line_1 {
+      transform: translateY(8px) rotate(-45deg);
+      top: 0;
+    }
+    .line_2 {
+      opacity: 0;
+    }
+    .line_3 {
+      transform: translateY(-8px) rotate(45deg);
+      bottom: 0;
+    }
+    
     
     .nav-list-item {
-      width: 100%;
+      text-align: center;
       margin: 0 0 10px 0;
     }
+    
+    
+    
     
     
      /* top.html */
@@ -250,7 +316,7 @@
 
 
 
-
+  /* PC 表示 css */
 
   /* header */
   header {
@@ -275,11 +341,14 @@
     text-decoration: none;
   }
   
-  .nav-list {
+  
+  
+  .pc-nav {
     text-align: right;
     padding: 0 30px;
     margin: 0 auto;
   }
+  
   
   
   .link {
