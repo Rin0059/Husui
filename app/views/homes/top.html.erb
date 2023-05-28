@@ -1,17 +1,20 @@
 <!-- header -->
 <header>
-  <h2 class="heading">
-    株式会社 <span>ターン・ライト</span>
-  </h2>
-  <nav>
-    <ul class="nav-list">
-      <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
-      <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
-      <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
-      <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
-    </ul>
-  </nav>
+  <div class="heading">
+    <a href="#">株式会社 <span>ターン・ライト</span></a>
+  </div>
+    
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+        <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+        <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+        <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+      </ul>
+    </nav>
 </header>
+
+
 <!-- main-visual用のdiv -->
 <div class="main-visual">
   <div class="main-visual-content">
@@ -87,7 +90,7 @@
               こちらのページで解決しない場合、お気軽にお問い合わせください。<br />
             </p>
           </div>
-          <%= link_to '詳しくはこちら', husuis_show_path, class: "btn btn-success" %>
+          <%= link_to '詳しくはこちら', husuis_help_path, class: "btn btn-success" %>
         </section>
       </div>
       <div class="blog-item">
@@ -104,7 +107,7 @@
               <br />
             </p>
           </div>
-          <%= link_to '詳しくはこちら', husuis_help_path, class: "btn btn-success" %>
+          <%= link_to '詳しくはこちら', husuis_show_path, class: "btn btn-success" %>
         </section>
       </div>
     </div>
