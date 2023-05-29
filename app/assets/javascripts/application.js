@@ -19,7 +19,7 @@
 //= require_tree .
 
 
-
-$('.menu__button').on('click',function(){
-  $('.menu').toggleClass('menu--isOpen');
+/*global $*/
+$('.nav_toggle').on('click', function () {
+  $('.nav_toggle, .nav').toggleClass('show');
 });

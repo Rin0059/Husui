@@ -4,37 +4,22 @@
     <a href="#">株式会社 <span>ターン・ライト</span></a>
   </div>
   
-  <div class="hamburger-nav">
-    <div id="nav">
-      <nav class="pc-nav">
-        <ul>
-          <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
-          <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
-          <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
-          <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
-        </ul>
-      </nav>
-    </div>
-    
-    <div id="hamburger">
-      <span class="inner_line" id="line1"></span>
-      <span class="inner_line" id="line2"></span>
-      <span class="inner_line" id="line3"></span>
-    </div>
-    
-   </div>
+  <span class="nav_toggle">
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
 
-  <script>
-      function hamburger() {
-        document.getElementById("line1").classList.toggle("line_1");
-        document.getElementById("line2").classList.toggle("line_2");
-        document.getElementById("line3").classList.toggle("line_3");
-        document.getElementById("nav").classList.toggle("in");
-      };
-      document.getElementById("hamburger").addEventListener("click", function() {
-        hamburger();
-      });
-  </script>
+  <div id="nav">
+    <nav class="pc-nav">
+      <ul>
+        <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+        <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+        <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+        <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+      </ul>
+    </nav>
+  </div>
   
 </header>
 
