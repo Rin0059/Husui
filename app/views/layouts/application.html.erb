@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8" />
     <title>HUSUI</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,8 +10,39 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
+  
 
   <body>
+    
+    <header>
+      <div class="heading">
+        <a href="#">株式会社 <span>ターン・ライト</span></a>
+      </div>
+      
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    
+      <div id="nav">
+        <nav class="pc-nav">
+          <ul>
+            <li class="nav-list-item"><%= link_to 'ご挨拶', homes_about_path, class: "link" %></li>
+            <li class="nav-list-item"><%= link_to '料金案内', husuis_index_path, class: "link" %></li>
+            <li class="nav-list-item"><%= link_to 'ご相談の流れ', husuis_show_path, class: "link" %></li>
+            <li class="nav-list-item"><%= link_to 'お問い合わせ', husuis_help_path, class: "link" %></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--jqueryCDN-->
+    <script src="assets/application.js"></script><!--hamburger.js読み込み-->
+    
     <%= yield %>
   </body>
 </html>

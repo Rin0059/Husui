@@ -42,6 +42,7 @@
   }
   
   
+  
   /* タブレット*/
   @media screen and (max-width: 1024px) {
     
@@ -180,6 +181,7 @@
     
      /* header */
      
+     
      header {
       align-items: center;
       justify-content: space-between;
@@ -288,6 +290,7 @@
   
     .blog-box {
       width: 100%;
+      padding-left: 5%;
       background: url(img/黄緑1.jpg);
     }
     
