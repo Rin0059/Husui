@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery3
+//= require jquery
 //= require popper
 //= require bootstrap-sprockets
 //= require rails-ujs
@@ -18,8 +18,11 @@
 //= require turbolinks
 //= require_tree .
 
-
 /*global $*/
-$('.nav_toggle').on('click', function () {
-  $('.nav_toggle, .nav').toggleClass('show');
+$(function() {
+  $('.nav_toggle').on('click', function(event) {
+    $(this).toggleClass('active');
+    $('.pc-nav').fadeToggle();
+    event.preventDefault();
+  });
 });
